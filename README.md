@@ -13,3 +13,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see BMI
 ```bash
 $ cd backend && node app.js
 ```
+## Sample Screenshot
+
+![image](https://github.com/luansingjavier/bmi-calculator/assets/15357174/7b2a84a2-159d-4141-887d-80a4852a2a8b)
