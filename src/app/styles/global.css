@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.bmi {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.form-control {
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.btn-primary {
+  background-color: #3498db;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+}
+
+.bmi-result {
+  margin: auto;
+  max-width: 300px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.bmi-text {
+  font-size: 18px;
+  font-weight: bold;
+}
