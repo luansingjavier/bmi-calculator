@@ -5,11 +5,14 @@ import "../styles/global.css";
 
 function BMICalculator() {
   const [height, setHeight] = useState<number | string>("");
-  const [heightInches, setHeightInches] = useState<number | string>("");
   const [weight, setWeight] = useState<number | string>("");
+
+  const [heightFeet, setHeightFeet] = useState<number | string>("");
+  const [heightInches, setHeightInches] = useState<number | string>("");
+  const [pounds, setPounds] = useState<number | string>("");
+
   const [bmi, setBMI] = useState<number | null>(null);
   const [bmiUS, setBMIUS] = useState<number | null>(null);
-  const [activeTab, setActiveTab] = useState("metric");
 
   const calculateMetricBMI = () => {
     const data = {
@@ -35,9 +38,9 @@ function BMICalculator() {
 
   const calculateUSBMI = () => {
     const data = {
-      feet: height,
+      feet: heightFeet,
       inches: heightInches,
-      pounds: weight,
+      pounds: pounds,
     };
 
     console.log("data", data);
@@ -103,8 +106,8 @@ function BMICalculator() {
             <Form.Control
               type="text"
               placeholder="Enter height in feet"
-              value={height}
-              onChange={(e) => setHeight(e.target.value)}
+              value={heightFeet}
+              onChange={(e) => setHeightFeet(e.target.value)}
             />
           </Form.Group>
 
@@ -123,8 +126,8 @@ function BMICalculator() {
             <Form.Control
               type="text"
               placeholder="Enter weight in pounds"
-              value={weight}
-              onChange={(e) => setWeight(e.target.value)}
+              value={pounds}
+              onChange={(e) => setPounds(e.target.value)}
             />
           </Form.Group>
 
