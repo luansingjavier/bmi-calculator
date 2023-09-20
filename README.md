@@ -15,4 +15,5 @@ $ cd backend && node app.js
 ```
 ## Sample Screenshot
 
-![image](https://github.com/luansingjavier/bmi-calculator/assets/15357174/7b2a84a2-159d-4141-887d-80a4852a2a8b)
+![image](https://github.com/luansingjavier/bmi-calculator/assets/15357174/fdb2cffb-7761-467f-a2e2-4e69b9913d01)
+
